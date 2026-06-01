@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1-Bro'Lechon</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+
+<body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="pig.png">Bro<span>'</span>Lechon <img src="lechon images/pig.png" alt="pig" width="40px"></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Promo</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+
+      <div class="content">
+         <h2>Crispy Outside, Juicy Inside<span>—Lechon You Can’t Resist</span></h2>
+
+         <p>
+            Lechon baboy is more than just food—it is a Philippines culture that symbol of our celebration and togetherness.
+         </p>
+
+         <p>
+           Loved for its crispy skin, juicy meat, and role as the centerpiece of big celebrations.
+         </p>
+
+         <button>Order Now</button>
+
+      </div>
+
+      <div class="lechon-pic">
+        <img src="lechon images/lechon.png" alt="lechon-pic">
+      </div>
+
+    </section> 
+
+    <div class="footer">
+     <p> © 2026 Kriscel Mae Tingcang. All rights reserved.</p>
+    </div>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
